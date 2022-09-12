@@ -1,11 +1,11 @@
-import logo from "./logo.svg";
 import "./App.css";
-import { Button } from "@material-tailwind/react";
+
+import HomePage from "./pages/home/HomePage";
 
 function App() {
   return (
-    <div className="App">
-      <Button>Button</Button>
+    <div>
+      <HomePage />
     </div>
   );
 }
