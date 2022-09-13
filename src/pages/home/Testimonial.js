@@ -36,7 +36,7 @@ const Testimonial = () => {
   ];
 
   return (
-    <div className="mb-12">
+    <div className="mb-20">
       <div className="text-center mt-12 mb-8">
         <p className="text-[#642DFF]">Testimonial</p>
         <h3 className="text-3xl font-semibold">What they say?</h3>
@@ -48,7 +48,7 @@ const Testimonial = () => {
             {testimonials?.map((testimonial) => (
               <SwiperSlide className="">
                 <div>
-                  <div className=" lg:flex items-center md:px-8  lg:mx-20 border  bg-white shadow-2xl text-justify ">
+                  <div className=" lg:flex items-center md:px-8  lg:mx-20 border  bg-white shadow-xl lg:py-8 text-justify ">
                     <div className="px-10 lg:px-4 lg:mb-10 z-20">
                       <h2 className="text-lg font-bold">{testimonial.name}</h2>
                       <p className="font-semibold text-sm mb-2">

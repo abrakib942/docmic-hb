@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../../Shared/Footer";
 import NavMenu from "../../Shared/NavMenu";
 import Banner from "./Banner";
 import Experience from "./Experience";
@@ -17,6 +18,7 @@ const HomePage = () => {
       <Feature />
       <FaqQues />
       <Testimonial />
+      <Footer />
     </div>
   );
 };
