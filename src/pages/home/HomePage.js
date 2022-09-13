@@ -10,7 +10,11 @@ import Testimonial from "./Testimonial";
 
 const HomePage = () => {
   return (
-    <div>
+    <div
+      style={{
+        background: " #E8EEF6 ",
+      }}
+    >
       <NavMenu />
       <Banner />
       <Services />

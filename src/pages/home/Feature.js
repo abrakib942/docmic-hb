@@ -39,31 +39,35 @@ const Feature = () => {
   ];
 
   return (
-    <div className="container mx-auto px-8 my-8">
-      <div className="grid lg:grid-cols-2 justify-items-center">
-        <div className="mb-4">
-          <img src={feature} alt="" />
-        </div>
-        <div className="lg:px-12">
-          <p className="text-[#642DFF]">Our Hospital Feature</p>
-          <h3 className="text-3xl font-semibold">
-            Make An Appointment Easy And Fast Services{" "}
-          </h3>
+    <section>
+      <div className="container mx-auto px-8 my-8">
+        <div className="grid lg:grid-cols-2 justify-items-center">
+          <div className="mb-4">
+            <img src={feature} alt="" />
+          </div>
+          <div className="lg:px-12">
+            <p className="text-[#642DFF]">Our Hospital Feature</p>
+            <h3 className="text-3xl font-semibold">
+              Make An Appointment Easy And Fast Services{" "}
+            </h3>
 
-          <div className=" grid lg:grid-cols-2 md:grid-cols-2 gap-5 justify-items-center mt-2">
-            {features.map((feature) => (
-              <div className="bg-white  lg:w-[260px] p-2 rounded-lg ">
-                <div className="flex justify-between items-center">
-                  <p className="text-[#1E1E1E] font-semibold">{feature.name}</p>
-                  <img src={feature.icon} alt="" />
+            <div className=" grid lg:grid-cols-2 md:grid-cols-2 gap-5 justify-items-center mt-2">
+              {features.map((feature) => (
+                <div className="bg-white  lg:w-[260px] p-2 rounded-lg ">
+                  <div className="flex justify-between items-center">
+                    <p className="text-[#1E1E1E] font-semibold">
+                      {feature.name}
+                    </p>
+                    <img src={feature.icon} alt="" />
+                  </div>
+                  <p className="text-[#575757] my-3">{feature.text}</p>
                 </div>
-                <p className="text-[#575757] my-3">{feature.text}</p>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
