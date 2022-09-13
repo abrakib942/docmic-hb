@@ -1,8 +1,12 @@
 import { Button } from "@material-tailwind/react";
-import React from "react";
+import React, { useState } from "react";
+import ReactVisibilitySensor from "react-visibility-sensor";
 import banner from "../../assets/banner.png";
+import CountUp from "react-countup";
 
 const Banner = () => {
+  const [inVisible, setInvisible] = useState(false);
+
   const summaries = [
     {
       id: 1,
@@ -45,13 +49,25 @@ const Banner = () => {
 
         <div className="my-14 grid grid-cols-3  justify-items-center">
           {summaries.map((summary) => (
-            <div className="text-center">
-              <h3 className="text-3xl font-semibold text-[#642DFF]">
-                {summary.number}
-                {summary.action}
-              </h3>
-              <p className="text-[#575757] font-semibold">{summary.text}</p>
-            </div>
+            <ReactVisibilitySensor
+              offset={{ top: 300 }}
+              onChange={() => setInvisible(!inVisible)}
+            >
+              <div className="text-center">
+                {inVisible ? (
+                  <h2 className="text-3xl font-semibold text-[#642DFF]">
+                    <CountUp start={0} end={summary.number} duration={3} />
+                    {summary.action}
+                  </h2>
+                ) : (
+                  <h3 className="text-3xl font-semibold text-[#642DFF]">
+                    {summary.number}
+                    {summary.action}
+                  </h3>
+                )}
+                <p className="text-[#575757] font-semibold">{summary.text}</p>
+              </div>
+            </ReactVisibilitySensor>
           ))}
         </div>
       </div>
