@@ -38,7 +38,7 @@ const Services = () => {
   ];
 
   return (
-    <div className="container mx-auto lg:px-24">
+    <div className="container mx-auto lg:px-20 px-10">
       <div className="text-center">
         <h5 className="text-[#642DFF] text-xl font-semibold mb-2">
           Our Services
@@ -48,7 +48,7 @@ const Services = () => {
         </h2>
       </div>
 
-      <div className=" grid lg:grid-cols-4 grid-cols-2 gap-4 justify-items-center my-6">
+      <div className=" grid lg:grid-cols-4 md:grid-cols-2 gap-4 justify-items-center my-6">
         {services.map((service) => (
           <div className="bg-white  w-[250px] px-3 py-5 rounded-lg hover:border-2 hover:text-[#2D89FF] border-[#2D89FF]">
             <div className="flex justify-between items-center">
