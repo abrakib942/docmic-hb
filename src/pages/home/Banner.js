@@ -56,7 +56,7 @@ const Banner = () => {
               <div className="text-center">
                 {inVisible ? (
                   <h2 className="text-3xl font-semibold text-[#642DFF]">
-                    <CountUp start={0} end={summary.number} duration={3} />
+                    <CountUp start={0} end={summary.number} duration={2} />
                     {summary.action}
                   </h2>
                 ) : (
