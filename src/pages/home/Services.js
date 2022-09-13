@@ -49,7 +49,12 @@ const Services = () => {
           </h2>
         </div>
 
-        <div className=" grid lg:grid-cols-4 md:grid-cols-2 gap-4 justify-items-center my-6">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="200"
+          className=" grid lg:grid-cols-4 md:grid-cols-2 gap-4 justify-items-center my-6"
+        >
           {services.map((service) => (
             <div className="bg-white  w-[236px] px-3 py-5 rounded-lg hover:border-2 hover:text-[#2D89FF] border-[#2D89FF]">
               <div className="flex justify-between items-center">

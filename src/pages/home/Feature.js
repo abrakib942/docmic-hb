@@ -42,16 +42,31 @@ const Feature = () => {
     <section>
       <div className="container mx-auto px-8 my-8">
         <div className="grid lg:grid-cols-2 justify-items-center">
-          <div className="mb-4">
+          <div
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+            className="mb-4"
+          >
             <img src={feature} alt="" />
           </div>
           <div className="lg:px-12">
             <p className="text-[#642DFF]">Our Hospital Feature</p>
-            <h3 className="text-3xl font-semibold">
+            <h3
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-delay="200"
+              className="text-3xl font-semibold"
+            >
               Make An Appointment Easy And Fast Services{" "}
             </h3>
 
-            <div className=" grid lg:grid-cols-2 md:grid-cols-2 gap-5 justify-items-center mt-2">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="300"
+              className=" grid lg:grid-cols-2 md:grid-cols-2 gap-5 justify-items-center mt-2"
+            >
               {features.map((feature) => (
                 <div className="bg-white  lg:w-[260px] p-2 rounded-lg ">
                   <div className="flex justify-between items-center">

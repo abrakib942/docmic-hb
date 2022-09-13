@@ -85,7 +85,12 @@ const FaqQues = () => {
             </Accordion>
           </Fragment>
         </div>
-        <div className="lg:mt-[-70px]">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="200"
+          className="lg:mt-[-70px]"
+        >
           <img src={faq} alt="" />
         </div>
       </div>

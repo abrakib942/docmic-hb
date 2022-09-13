@@ -11,7 +11,12 @@ const Experience = () => {
 
         <div className="grid lg:grid-cols-2  justify-items-end">
           <div className="mb-4">
-            <h2 className="text-3xl font-semibold my-3">
+            <h2
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-delay="200"
+              className="text-3xl font-semibold my-3"
+            >
               We Are Always ensure Best Medical Treatment For Your Health
             </h2>
             <p className="text-[#575757]">
@@ -25,7 +30,12 @@ const Experience = () => {
               content here', making it look lik
             </p>
           </div>
-          <div className="lg:mr-12">
+          <div
+            data-aos="fade-down"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+            className="lg:mr-12"
+          >
             <img src={exp} alt="" />
           </div>
         </div>

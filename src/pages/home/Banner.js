@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import ReactVisibilitySensor from "react-visibility-sensor";
 import banner from "../../assets/banner.png";
 import CountUp from "react-countup";
+import ornament from "../../assets/Ornament.png";
 
 const Banner = () => {
   const [inVisible, setInvisible] = useState(false);
@@ -35,19 +36,49 @@ const Banner = () => {
       }}
     >
       <div className="container mx-auto grid lg:grid-cols-2 justify-items-center px-8">
-        <div className="lg:mt-16 mt-8 lg:ml-24 ">
-          <h1 className="text-6xl  font-medium">
-            Your <span className="text-[#2D89FF]">Health</span> Is Our Top
-            <span className="text-[#642DFF]"> Priority</span>
+        <div className="lg:mt-16 mt-8 lg:ml-24 relative z-20">
+          <h1
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+            className="text-6xl  font-medium"
+          >
+            Your{" "}
+            <span
+              data-aos="fade-down-left"
+              data-aos-duration="900"
+              data-aos-delay="300"
+              className="text-[#2D89FF]"
+            >
+              Health
+            </span>{" "}
+            Is Our Top
+            <span
+              data-aos="fade-left"
+              data-aos-duration="900"
+              data-aos-delay="300"
+              className="text-[#642DFF]"
+            >
+              {" "}
+              Priority
+            </span>
           </h1>
-          <p className="my-6">
+          <p
+            data-aos="fade-right"
+            data-aos-delay="400"
+            data-aos-duration="900"
+            className="my-6"
+          >
             There are many variations of passages of lpsum available, but the
             majority hae suffered.
           </p>
           <Button
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="200"
             variant="gradient"
             size="lg"
-            className="bg-[#2D89FF] normal-case"
+            className="bg-[#2D89FF] normal-case "
           >
             Meet Our Specialist
           </Button>
@@ -76,8 +107,19 @@ const Banner = () => {
             ))}
           </div>
         </div>
-        <div className="mt-[-24px] lg:mr-16">
+        <div className="absolute left-0 bottom-40">
+          <img src={ornament} alt="" />
+        </div>
+        <div
+          data-aos="fade-left"
+          data-aos-duration="1000"
+          data-aos-delay="200"
+          className="mt-[-24px] lg:mr-16 relative"
+        >
           <img src={banner} alt="" />
+        </div>
+        <div className="absolute bottom-0 right-60">
+          <img src={ornament} alt="" />
         </div>
       </div>
     </section>
