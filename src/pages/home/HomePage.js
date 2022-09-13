@@ -5,6 +5,7 @@ import Experience from "./Experience";
 import FaqQues from "./FaqQues";
 import Feature from "./Feature";
 import Services from "./Services";
+import Testimonial from "./Testimonial";
 
 const HomePage = () => {
   return (
@@ -15,6 +16,7 @@ const HomePage = () => {
       <Experience />
       <Feature />
       <FaqQues />
+      <Testimonial />
     </div>
   );
 };
