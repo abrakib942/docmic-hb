@@ -50,7 +50,7 @@ const Services = () => {
 
       <div className=" grid lg:grid-cols-4 md:grid-cols-2 gap-4 justify-items-center my-6">
         {services.map((service) => (
-          <div className="bg-white  w-[250px] px-3 py-5 rounded-lg hover:border-2 hover:text-[#2D89FF] border-[#2D89FF]">
+          <div className="bg-white  w-[236px] px-3 py-5 rounded-lg hover:border-2 hover:text-[#2D89FF] border-[#2D89FF]">
             <div className="flex justify-between items-center">
               <p className="text-[#1E1E1E]">{service.name}</p>
               <img src={service.icon} alt="" />
